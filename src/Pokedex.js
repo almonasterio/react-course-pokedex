@@ -9,7 +9,7 @@ export default class Pokedex extends Component {
         let {pokemonList} = this.props
 console.log(pokemonList)
         return (
-            <>
+   
             <div className='Pokedex'>
               
                 {pokemonList.map(pokemon => <Pokemon
@@ -19,7 +19,7 @@ console.log(pokemonList)
                 exp={pokemon.base_experience}
                 ></Pokemon>)}
             </div>
-            </>
+     
         )
     }
 }

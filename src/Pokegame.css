@@ -7,3 +7,14 @@
 
     color: green
 }
+
+h4 {
+    color:black
+}
+
+.pokegame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

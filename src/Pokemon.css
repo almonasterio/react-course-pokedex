@@ -1,6 +1,6 @@
 .pokemon {
     background-color: rgb(215, 221, 226);
-    width: 250px;
+    width: 200px;
     padding: 20px;
     margin:20px;
     border-radius: 5px;
@@ -9,4 +9,12 @@
 
 h4 {
     color:blue;
+}
+img{
+    width:100px;
+    transition: all ease 500ms;
+}
+img:hover {
+    transform: scale(1.25);
+    opacity:0.7;
 }

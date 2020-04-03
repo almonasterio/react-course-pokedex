@@ -14,9 +14,8 @@ render() {
   let {id, name, type, exp} = this.props
 
 const imgId = () => {
-   (id.toString(10).length==1) && (id=`00${id}`);
-   (id.toString(10).length == 2) && (id =`0${id}`);
-   (id.toString(10).length == 3) && (id =`${id}`);
+   (id<999) && (id=`00${id}`.slice(-3))
+ 
 }
 imgId()
     return(

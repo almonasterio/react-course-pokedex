@@ -32,14 +32,13 @@ console.log(hand1Exp)
 
 
         return (
-            <div>
+            <div className="pokegame">
             <h2>Pokegame</h2>
-                <p>Hand 1</p>
-                <h3 className={(hand1Exp>hand2Exp)? "winner" : "loser"}>{(hand1Exp>hand2Exp)? ("You Win!!") : ("You lose!!") }</h3>
-
+                <h3 className={(hand1Exp>hand2Exp)? "winner" : "loser"}>{(hand1Exp>hand2Exp)? ("Winning Hand!!") : ("Losing Hand!!") }</h3>
+                <h4>Total Experience: {hand1Exp}</h4>
                 <Pokedex pokemonList={hand1}/>
-                <p>Hand 2</p>
-                <h3 className={(hand2Exp>hand1Exp)? "winner" : "loser"}>{(hand2Exp>hand1Exp)? ("You Win!!") : ("You lose!!") }</h3>
+                <h3 className={(hand2Exp>hand1Exp)? "winner" : "loser"}>{(hand2Exp>hand1Exp)? ("Winning Hand!!") : ("Losing Hand!!") }</h3>
+                <h4>Total Experience: {hand2Exp}</h4>
                 <Pokedex pokemonList={hand2}/>
             </div>
         )
