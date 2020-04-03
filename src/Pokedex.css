@@ -1,0 +1,7 @@
+.Pokedex {
+    background-color: rgb(216, 138, 138);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
